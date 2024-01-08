@@ -14,7 +14,8 @@ body{
     flex-direction: column;
 }
 .container{
-    width: 900px;
+    width: 1024px;
+    height: 536px;
     display: flex;
     background-color: white;
 }
@@ -42,14 +43,52 @@ body{
 .text{
     color:hsl(0, 36%, 70%);
     font-size: 16px;
+    width: 80%;
+    margin-bottom: 28px;
 }
 .right{
     width: 40%;
 }
 .photo{
-    width: 360px;
+    width: 100%;
     object-fit: contain;
 }
 .email{
     border: none;
+}
+.form{
+    position: relative;
+    width: 80%;
+}
+.form-email{
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding:16px;
+}
+.email{
+    width: 70%;
+}
+.email:focus{
+    outline: none;
+}
+.submit-btn{
+    position: absolute;
+    right: 0px;
+}
+.error{
+    display: none;
+}
+.submit{
+    width: 88px;
+    height: 47px;
+    background-color: hsl(0, 78%, 70%);
+    border: none;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.submit:hover{
+    transform: scale(1.1);
 }
