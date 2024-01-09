@@ -66,10 +66,11 @@ body{
     border-radius: 30px;
     display: flex;
     align-items: center;
-    padding:16px;
+    padding:16px 28px;
 }
 .email{
     width: 70%;
+    color: hsl(0, 36%, 70%);
 }
 .email:focus{
     outline: none;
@@ -77,9 +78,20 @@ body{
 .submit-btn{
     position: absolute;
     right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 .error{
     display: none;
+    height: 26px;
+    transition: 0.4s ease-in-out;
+}
+.error-msg{
+    margin-left: 28px;
+    font-size: 14px;
+    margin-top: 8px;
 }
 .submit{
     width: 88px;
@@ -91,4 +103,20 @@ body{
 }
 .submit:hover{
     transform: scale(1.1);
+}
+@media(max-width: 425px){
+    .container{
+        flex-direction: column-reverse;
+        width: 375px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .photo{
+        height: 200px;
+        object-fit: cover;
+    }
 }
